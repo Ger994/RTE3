@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>RT Electrical | Premium Electrical Services & EV Charging Installation Renfrewshire</title>
+    <meta name="description" content="NAPIT-registered electricians specializing in EV charger installation, rewires, smart home systems across Renfrewshire, Paisley, Renfrew, Houston & Johnstone. 24/7 emergency callouts available.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="EV charging installation Renfrewshire, electric vehicle charger Paisley, Tesla charger installation Scotland, home EV charging point, commercial EV charging stations, electrician Renfrewshire, emergency electrician Paisley, NAPIT electrician Scotland">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rosstonnerelectrical.com/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RT Electrical | Premium Electrical Services & EV Charging Renfrewshire">
+    <meta property="og:description" content="Expert EV charger installation & electrical services across Renfrewshire. NAPIT-registered, fully insured, 24/7 emergency callouts.">
+    <meta property="og:url" content="https://rosstonnerelectrical.com/">
+    <meta property="og:image" content="https://rosstonnerelectrical.com/images/logo.jpeg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RT Electrical | EV Charging & Electrical Services">
+    <meta name="twitter:description" content="Leading EV charger installer in Renfrewshire. Expert electrical services for homes & businesses.">
+    <meta name="twitter:image" content="https://rosstonnerelectrical.com/images/logo.jpeg">
+    
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="vdlCTlt337V6AsrYfvNixC_FH4EQM7Q_IoSB-7Y_QM4">
+    
+    <!-- Icons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #dc143c;
+            --primary-dark: #a01028;
+            --primary-light: #ff1744;
+            --bg-dark: #0a0a0a;
+            --bg-mid: #1a1a1a;
+            --bg-light: #2a2a2a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --gradient-dark: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            --gradient-hero: linear-gradient(180deg, rgba(10,10,10,0.95) 0%, rgba(26,26,26,0.9) 50%, rgba(42,42,42,0.85) 100%);
+            --gradient-accent: linear-gradient(135deg, #dc143c 0%, #ff1744 100%);
+            --shadow-xl: 0 20px 60px rgba(0,0,0,0.8);
+            --shadow-glow: 0 0 40px rgba(220,20,60,0.3);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Loading Animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-ring {
+            width: 60px;
+            height: 60px;
+            border: 3px solid var(--bg-light);
+            border-top: 3px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(220, 20, 60, 0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        header.scrolled {
+            padding: 0.75rem 5%;
+            box-shadow: var(--shadow-xl);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: translateX(5px);
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+        }
+
+        .logo strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        .cta-button {
+            padding: 0.75rem 2rem;
+            background: var(--gradient-accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(220, 20, 60, 0.5);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-hero);
+            position: relative;
+            padding: 6rem 5%;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('images/hero-bg.jpg') center/cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            animation: slideInLeft 1s ease;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text .highlight {
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: white;
+            box-shadow: 0 5px 20px rgba(220, 20, 60, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(220, 20, 60, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            position: relative;
+            animation: slideInRight 1s ease;
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            padding: 2rem;
+            background: var(--gradient-dark);
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .floating-badge {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background: var(--gradient-accent);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--shadow-glow);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            background: var(--gradient-dark);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--bg-mid);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(220, 20, 60, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-accent);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-accent);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            color: var(--text-secondary);
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* EV Charging Section */
+        .ev-section {
+            padding: 5rem 5%;
+            background: linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-dark) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ev-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(220, 20, 60, 0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.3; }
+        }
+
+        .ev-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .ev-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .ev-text h2 span {
+            color: var(--primary);
+        }
+
+        .ev-text p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .ev-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .ev-feature {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(220, 20, 60, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .ev-feature:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(220, 20, 60, 0.2);
+        }
+
+        .ev-feature h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .ev-feature p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* Gallery */
+        .gallery {
+            padding: 5rem 5%;
+            background: var(--bg-dark);
+        }
+
+        .gallery-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            background: var(--bg-mid);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.9) 100%);
+            padding: 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-overlay p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            animation: zoomIn 0.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Quote Form */
+        .quote-section {
+            padding: 5rem 5%;
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-mid) 100%);
+        }
+
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-light);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid rgba(220, 20, 60, 0.2);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 1rem;
+            background: var(--bg-mid);
+            border: 1px solid rgba(220, 20, 60, 0.2);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(220, 20, 60, 0.2);
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 1.25rem;
+            background: var(--gradient-accent);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(220, 20, 60, 0.3);
+        }
+
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(220, 20, 60, 0.5);
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 5%;
+            background: var(--bg-dark);
+        }
+
+        .testimonials-slider {
+            max-width: 1200px;
+            margin: 3rem auto;
+            position: relative;
+        }
+
+        .testimonial-card {
+            background: var(--bg-mid);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 0 1rem;
+            border: 1px solid rgba(220, 20, 60, 0.1);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.3;
+        }
+
+        .testimonial-content {
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-info h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .rating {
+            color: gold;
+            margin-left: auto;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 5rem 5%;
+            background: var(--gradient-dark);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-mid);
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            border: 1px solid rgba(220, 20, 60, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary);
+        }
+
+        .faq-question {
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--bg-light);
+        }
+
+        .faq-question h3 {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        .faq-icon {
+            color: var(--primary);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer p {
+            padding: 0 2rem 1.5rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 5rem 5%;
+            background: var(--bg-mid);
+        }
+
+        .contact-grid {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-dark);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(220, 20, 60, 0.1);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary);
+        }
+
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: var(--primary-light);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-dark);
+            padding: 3rem 5% 1.5rem;
+            border-top: 1px solid rgba(220, 20, 60, 0.2);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            padding: 0.5rem 0;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        .footer-bottom a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .ev-content {
+                grid-template-columns: 1fr;
+            }
+
+            .ev-features {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 400px;
+            height: 100vh;
+            background: var(--bg-mid);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 998;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+        }
+
+        .mobile-menu-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu-links {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .mobile-menu-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-menu-links a:hover {
+            color: var(--primary);
+        }
+    </style>
+
+    <!-- Enhanced Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ElectricalContractor",
+        "@id": "https://rosstonnerelectrical.com/#business",
+        "name": "RT Electrical",
+        "alternateName": "Ross Tonner Electrical",
+        "url": "https://rosstonnerelectrical.com/",
+        "logo": "https://rosstonnerelectrical.com/images/logo.jpeg",
+        "image": [
+            "https://rosstonnerelectrical.com/images/logo.jpeg",
+            "https://rosstonnerelectrical.com/images/gallery/image1.jpeg",
+            "https://rosstonnerelectrical.com/images/gallery/image2.jpeg"
+        ],
+        "telephone": "+447799531890",
+        "email": "admin@rosstonnerelectrical.com",
+        "priceRange": "££-£££",
+        "description": "NAPIT-registered electrical contractors specializing in EV charger installation, domestic and commercial electrical services across Renfrewshire. Expert installers of Tesla, Zappi, Pod Point and other leading EV charging systems.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "29 Lounsdale Grove",
+            "addressLocality": "Paisley",
+            "addressRegion": "Renfrewshire",
+            "postalCode": "PA2 9LU",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "55.8456",
+            "longitude": "-4.4234"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Paisley"
+            },
+            {
+                "@type": "City",
+                "name": "Renfrew"
+            },
+            {
+                "@type": "City",
+                "name": "Houston"
+            },
+            {
+                "@type": "City",
+                "name": "Johnstone"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Renfrewshire"
+            },
+            {
+                "@type": "Country",
+                "name": "Scotland"
+            }
+        ],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "07:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "17:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "00:00",
+                "closes": "00:00",
+                "description": "Emergency callouts available"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Electrical Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "EV Charger Installation",
+                        "description": "Professional installation of electric vehicle charging points for homes and businesses"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Full House Rewiring",
+                        "description": "Complete electrical rewiring services with minimal disruption"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Consumer Unit Upgrades",
+                        "description": "Modern consumer unit installation with RCD protection"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Emergency Electrical Services",
+                        "description": "24/7 emergency callout service across Renfrewshire"
+                    }
+                }
+            ]
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Ross Tonner"
+        },
+        "memberOf": [
+            {
+                "@type": "Organization",
+                "name": "NAPIT",
+                "description": "National Association of Professional Inspectors and Testers"
+            }
+        ],
+        "knowsAbout": [
+            "EV charging installation",
+            "Electric vehicle chargers",
+            "Tesla charger installation",
+            "Zappi charger installation",
+            "Pod Point installation",
+            "Home charging points",
+            "Commercial EV charging",
+            "Rewiring",
+            "Consumer unit upgrades",
+            "Lighting installation",
+            "Fault finding",
+            "Emergency callouts",
+            "Commercial electrical work",
+            "Domestic electrical work",
+            "Smart home installation",
+            "Solar panel connections",
+            "CCTV installation"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "47",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sarah Mitchell"
+                },
+                "datePublished": "2024-11-15",
+                "reviewBody": "RT Electrical installed our Tesla home charger. Excellent work, very professional and tidy. Highly recommend for EV charging installation in Paisley.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                }
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "James Thomson"
+                },
+                "datePublished": "2024-10-28",
+                "reviewBody": "Complete house rewire completed on time and budget. Ross and his team are true professionals.",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rosstonnerelectrical.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://rosstonnerelectrical.com/#services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "EV Charging",
+                "item": "https://rosstonnerelectrical.com/#ev-charging"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much does EV charger installation cost in Renfrewshire?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EV charger installation costs typically range from £800-£1500 including the unit and installation. We offer free quotes and can advise on government grants available for home charging points."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer emergency electrical services?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we provide 24/7 emergency electrical callouts across Renfrewshire, Paisley, Renfrew, Houston, and Johnstone. Call 07799 531890 for immediate assistance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are you qualified to install Tesla home chargers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we are fully qualified and experienced in installing all major EV charging brands including Tesla Wall Connectors, Zappi, Pod Point, and more. All installations comply with current regulations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas do you cover?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We provide electrical services throughout Renfrewshire including Paisley, Renfrew, Houston, Johnstone, Bridge of Weir, Bishopton, Erskine, and surrounding areas."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo">
+                <img src="images/logo.jpeg" alt="RT Electrical Logo">
+                <span>RT <strong>Electrical</strong></span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Services</a>
+                <a href="#ev-charging">EV Charging</a>
+                <a href="#gallery">Our Work</a>
+                <a href="#quote">Quote</a>
+                <a href="tel:+447799531890" class="cta-button">Call Now</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileClose">×</button>
+        <div class="mobile-menu-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#ev-charging">EV Charging</a>
+            <a href="#gallery">Our Work</a>
+            <a href="#quote">Get Quote</a>
+            <a href="tel:+447799531890">📞 Call Now</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Premium <span class="highlight">Electrical Services</span> & EV Charging Installation</h1>
+                <p>NAPIT-registered electricians delivering excellence across Renfrewshire. From EV charger installation to complete rewires, we power your future with expertise and reliability.</p>
+                <div class="hero-buttons">
+                    <a href="#quote" class="btn-primary">Get Free Quote</a>
+                    <a href="tel:+447799531890" class="btn-secondary">📞 Emergency Call</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="images/hero-electrical.jpg" alt="Professional Electrical Services">
+                    <div class="floating-badge">24/7 Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services fade-in" id="services">
+        <div class="section-header">
+            <h2>Our Professional Services</h2>
+            <p>Comprehensive electrical solutions for homes and businesses across Renfrewshire</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3>Full House Rewiring</h3>
+                <p>Complete electrical rewiring services with minimal disruption to your home. We ensure all work meets current regulations and safety standards.</p>
+                <ul class="service-features">
+                    <li>17th Edition compliant</li>
+                    <li>Minimal disruption</li>
+                    <li>Full certification</li>
+                    <li>10-year warranty</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔌</div>
+                <h3>Consumer Unit Upgrades</h3>
+                <p>Modern consumer unit installation with RCD protection, ensuring your home's electrical system is safe and up to current standards.</p>
+                <ul class="service-features">
+                    <li>RCD protection</li>
+                    <li>Surge protection options</li>
+                    <li>NAPIT certified</li>
+                    <li>Same-day service</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💡</div>
+                <h3>Smart Lighting Systems</h3>
+                <p>Transform your space with intelligent lighting solutions. From LED upgrades to complete smart home integration.</p>
+                <ul class="service-features">
+                    <li>Energy-efficient LED</li>
+                    <li>Smart home compatible</li>
+                    <li>Mood lighting design</li>
+                    <li>Voice control options</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚨</div>
+                <h3>24/7 Emergency Callouts</h3>
+                <p>Round-the-clock emergency electrical services across Paisley, Renfrew, Houston, Johnstone and surrounding areas.</p>
+                <ul class="service-features">
+                    <li>Rapid response</li>
+                    <li>Power restoration</li>
+                    <li>Fault finding</li>
+                    <li>Safety inspections</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Commercial Electrical</h3>
+                <p>Professional electrical services for businesses, offices, and commercial properties throughout Renfrewshire.</p>
+                <ul class="service-features">
+                    <li>PAT testing</li>
+                    <li>Emergency lighting</li>
+                    <li>Data cabling</li>
+                    <li>Maintenance contracts</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Fault Finding & Repairs</h3>
+                <p>Expert diagnosis and repair of electrical faults using advanced testing equipment for quick resolution.</p>
+                <ul class="service-features">
+                    <li>Thermal imaging</li>
+                    <li>Circuit testing</li>
+                    <li>Same-day repairs</li>
+                    <li>Preventive maintenance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EV Charging Section -->
+    <section class="ev-section fade-in" id="ev-charging">
+        <div class="ev-content">
+            <div class="ev-text">
+                <h2>Leading <span>EV Charger Installation</span> in Renfrewshire</h2>
+                <p>As certified installers of all major EV charging brands, we're your trusted partner for electric vehicle charging solutions. From Tesla Wall Connectors to Zappi and Pod Point systems, we deliver professional installation that powers your sustainable future.</p>
+                <div class="ev-features">
+                    <div class="ev-feature">
+                        <h4>🔋 All Brands</h4>
+                        <p>Tesla, Zappi, Pod Point, Ohme, and more</p>
+                    </div>
+                    <div class="ev-feature">
+                        <h4>💰 Grant Assistance</h4>
+                        <p>We help with OZEV grant applications</p>
+                    </div>
+                    <div class="ev-feature">
+                        <h4>🏠 Home & Business</h4>
+                        <p>Residential and commercial installations</p>
+                    </div>
+                    <div class="ev-feature">
+                        <h4>⚡ Fast Installation</h4>
+                        <p>Usually completed within 3-4 hours</p>
+                    </div>
+                </div>
+                <a href="#quote" class="btn-primary">Get EV Charger Quote</a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="images/ev-charging.jpg" alt="EV Charger Installation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery fade-in" id="gallery">
+        <div class="gallery-container">
+            <div class="section-header">
+                <h2>Our Recent Projects</h2>
+                <p>Quality workmanship across Renfrewshire</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image1.jpeg')">
+                    <img src="images/gallery/image1.jpeg" alt="Consumer Unit Installation">
+                    <div class="gallery-overlay">
+                        <h4>Consumer Unit Upgrade</h4>
+                        <p>Modern 18th edition board installation in Paisley</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image2.jpeg')">
+                    <img src="images/gallery/image2.jpeg" alt="EV Charger Installation">
+                    <div class="gallery-overlay">
+                        <h4>Tesla Wall Connector</h4>
+                        <p>Home EV charging point in Renfrew</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image3.jpeg')">
+                    <img src="images/gallery/image3.jpeg" alt="Commercial Lighting">
+                    <div class="gallery-overlay">
+                        <h4>LED Lighting Upgrade</h4>
+                        <p>Commercial property in Johnstone</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image4.jpeg')">
+                    <img src="images/gallery/image4.jpeg" alt="House Rewiring">
+                    <div class="gallery-overlay">
+                        <h4>Complete Rewire</h4>
+                        <p>Full house rewiring project in Houston</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image5.jpeg')">
+                    <img src="images/gallery/image5.jpeg" alt="Smart Home Installation">
+                    <div class="gallery-overlay">
+                        <h4>Smart Home System</h4>
+                        <p>Automated lighting and control system</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/gallery/image6.jpeg')">
+                    <img src="images/gallery/image6.jpeg" alt="Outdoor Lighting">
+                    <div class="gallery-overlay">
+                        <h4>Garden Lighting</h4>
+                        <p>Outdoor lighting installation in Bridge of Weir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img src="" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <!-- Quote Section -->
+    <section class="quote-section fade-in" id="quote">
+        <div class="section-header">
+            <h2>Get Your Free Quote</h2>
+            <p>Professional electrical services at competitive prices</p>
+        </div>
+        <div class="quote-container">
+            <form action="https://formspree.io/f/xnnegbep" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Required *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service...</option>
+                            <option value="ev-charging">EV Charger Installation</option>
+                            <option value="rewiring">House Rewiring</option>
+                            <option value="consumer-unit">Consumer Unit Upgrade</option>
+                            <option value="lighting">Lighting Installation</option>
+                            <option value="emergency">Emergency Repair</option>
+                            <option value="commercial">Commercial Services</option>
+                            <option value="fault-finding">Fault Finding</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" placeholder="e.g., Paisley, Renfrew, Houston">
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Urgency</label>
+                        <select id="urgency" name="urgency">
+                            <option value="standard">Standard (Within a week)</option>
+                            <option value="urgent">Urgent (Within 48 hours)</option>
+                            <option value="emergency">Emergency (Today)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" placeholder="Please describe your electrical requirements..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="form-submit">Get Free Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials fade-in">
+        <div class="section-header">
+            <h2>Customer Reviews</h2>
+            <p>What our clients say about RT Electrical</p>
+        </div>
+        <div class="testimonials-slider">
+            <!-- Elfsight Reviews Widget -->
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-6b01a66c-4f0a-479d-a3f0-bfcd6e31fee8" data-elfsight-app-lazy></div>
+            
+            <!-- Fallback testimonials -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    "RT Electrical installed our Tesla home charger last month. Absolutely brilliant service from start to finish. Ross explained everything clearly, the installation was neat and tidy, and the price was very competitive. Highly recommend for anyone needing EV charging in Paisley!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Sarah Mitchell</h4>
+                        <p>EV Charger Installation, Paisley</p>
+                    </div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq fade-in" id="faq">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Common questions about our electrical services</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How much does EV charger installation cost in Renfrewshire?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>EV charger installation typically costs between £800-£1500, including the charging unit and installation. The exact price depends on your specific requirements, the type of charger, and your property's electrical setup. We offer free site surveys and can advise on available government grants that may reduce costs.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer emergency electrical services?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We provide 24/7 emergency electrical callouts across Renfrewshire, including Paisley, Renfrew, Houston, Johnstone, and surrounding areas. For urgent electrical issues, call 07799 531890 for immediate assistance.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Are you qualified to install Tesla home chargers?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. We're fully qualified and experienced in installing all major EV charging brands including Tesla Wall Connectors, Zappi, Pod Point, Ohme, and more. All our installations comply with current regulations and come with full certification.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What areas do you cover?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We provide electrical services throughout Renfrewshire including Paisley, Renfrew, Houston, Johnstone, Bridge of Weir, Bishopton, Erskine, Inchinnan, Linwood, and all surrounding areas. We also cover parts of Greater Glasgow for larger projects.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Are you NAPIT registered and insured?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, RT Electrical is fully NAPIT registered and comprehensively insured for all domestic, commercial, and industrial electrical work. This means all our work is certified, guaranteed, and meets the highest industry standards.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can you help with government EV charging grants?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we assist with the complete OZEV grant application process for both home and workplace charging schemes. We'll guide you through eligibility requirements and handle the paperwork to help you access available funding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact fade-in">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Ready to discuss your electrical needs?</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Call Us</h3>
+                <p>24/7 Emergency Service</p>
+                <a href="tel:+447799531890">07799 531890</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3>Email Us</h3>
+                <p>Get a detailed quote</p>
+                <a href="mailto:admin@rosstonnerelectrical.com">admin@rosstonnerelectrical.com</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Service Area</h3>
+                <p>Covering all of Renfrewshire</p>
+                <a href="#services">View Coverage Map</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">⏰</div>
+                <h3>Working Hours</h3>
+                <p>Mon-Fri: 7am-7pm<br>Sat: 8am-5pm<br>Sun: Emergency only</p>
+                <a href="#quote">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About RT Electrical</h3>
+                <p>NAPIT-registered electrical contractors providing premium electrical services and EV charging installation across Renfrewshire. With years of experience and a commitment to excellence, we're your trusted local electricians.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#ev-charging">EV Charger Installation</a></li>
+                    <li><a href="#services">House Rewiring</a></li>
+                    <li><a href="#services">Consumer Unit Upgrades</a></li>
+                    <li><a href="#services">Emergency Callouts</a></li>
+                    <li><a href="#services">Commercial Electrical</a></li>
+                    <li><a href="#services">Smart Home Systems</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Service Areas</h3>
+                <ul>
+                    <li>Paisley Electricians</li>
+                    <li>Renfrew Electrical Services</li>
+                    <li>Houston Electricians</li>
+                    <li>Johnstone Electrical</li>
+                    <li>Bridge of Weir</li>
+                    <li>Bishopton & Erskine</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>
+                    29 Lounsdale Grove<br>
+                    Paisley, PA2 9LU<br>
+                    Scotland<br><br>
+                    📞 <a href="tel:+447799531890">07799 531890</a><br>
+                    ✉️ <a href="mailto:admin@rosstonnerelectrical.com">admin@rosstonnerelectrical.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> RT Electrical. All rights reserved. | NAPIT Registered | Fully Insured | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Hide loader after page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 500);
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Update active nav link
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Mobile menu
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileClose = document.getElementById('mobileClose');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        mobileToggle.addEventListener('click', openMobileMenu);
+        mobileClose.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-menu-links a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            lightboxImg.src = imageSrc;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission feedback
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                const button = form.querySelector('.form-submit');
+                button.textContent = 'Sending...';
+                button.disabled = true;
+            });
+        }
+    </script>
+</body>
+</html>
