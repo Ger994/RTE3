@@ -1057,13 +1057,42 @@
 section{ position: relative; }
 </style>
 
+
+<style>
+/* Header logo overhaul */
+.site-header .logo-icon,
+.logo-plain{
+  background: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.site-header img.logo,
+.site-header .logo-icon img,
+.site-header img{
+  height: 64px;
+  width: auto;
+  max-height: 64px;
+}
+
+@media (min-width: 768px){
+  .site-header img.logo,
+  .site-header .logo-icon img,
+  .site-header img{
+    height: 78px;
+    max-height: 78px;
+  }
+}
+</style>
+
 </head>
 <body>
     <!-- Header -->
     <header id="header">
         <nav>
             <a href="#home" class="logo">
-    <div class="logo-icon">
+    <div class="logo-icon logo-plain">
         <img src="./logo.png" alt="RT Electrical logo" class="logo-img">
     </div>
     <span><strong>RT</strong> Electrical</span>
