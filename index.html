@@ -1017,20 +1017,44 @@
 <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png.png">
 
 
-<style>
-/* Section separation & rhythm */
-.section-dark {
-  background: #000;
-  padding: 100px 20px;
-}
-.section-dark-alt {
-  background: #0f0f0f;
-  padding: 100px 20px;
-}
-section { position: relative; }
 
-/* Scroll offset for fixed header */
-#quick-quote { scroll-margin-top: 100px; }
+<style>
+/* Full-width section backgrounds + consistent rhythm */
+.section-dark,
+.section-dark-alt{
+  width: 100vw;
+  margin-left: calc(50% - 50vw); /* force full-bleed even inside centered layouts */
+  padding: 120px 20px;
+  position: relative;
+}
+
+.section-dark{ background: #000; }
+.section-dark-alt{ background: #0f0f0f; }
+
+/* Extra breathing room between Reviews and Quick Quote */
+#reviews{ padding-bottom: 160px; }
+#quick-quote{ padding-top: 160px; scroll-margin-top: 110px; }
+
+/* Keep content centered */
+.section-dark .container,
+.section-dark-alt .container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Make the quote card feel intentionally separated */
+#quick-quote .quote-card{
+  margin-top: 40px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+}
+
+/* If your card class is different, this still helps */
+#quick-quote .card{
+  margin-top: 40px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+}
+
+section{ position: relative; }
 </style>
 
 </head>
