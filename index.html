@@ -18,20 +18,20 @@
     <meta property="og:title" content="RT Electrical | Professional Rewiring & Consumer Unit Specialists">
     <meta property="og:description" content="Expert electrical rewiring and consumer unit upgrades across Renfrewshire. NAPIT-registered, fully insured, competitive pricing.">
     <meta property="og:url" content="https://rosstonnerelectrical.com/">
-    <meta property="og:image" content="https://rosstonnerelectrical.com/images/logo.png">
+    <meta property="og:image" content="https://rosstonnerelectrical.com/images/logo.jpeg">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="RT Electrical | Rewiring & Electrical Upgrade Specialists">
     <meta name="twitter:description" content="Leading electrical rewiring and consumer unit installation in Renfrewshire. Expert electrical services for homes & businesses.">
-    <meta name="twitter:image" content="https://rosstonnerelectrical.com/images/logo.png">
+    <meta name="twitter:image" content="https://rosstonnerelectrical.com/images/logo.jpeg">
     
     <!-- Site Verification -->
     <meta name="google-site-verification" content="vdlCTlt337V6AsrYfvNixC_FH4EQM7Q_IoSB-7Y_QM4">
     
     <!-- Icons -->
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    
 
     <style>
         * {
@@ -955,26 +955,85 @@
             }
         }
 
-</style>
+
+        /* Brand logo in navbar */
+        .logo-icon .logo-img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Modern button styling */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 18px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-primary);
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            cursor: pointer;
+            transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+        }
+
+        .btn-primary {
+            border: none;
+            background: var(--gradient-accent);
+            box-shadow: 0 10px 24px rgba(220, 20, 60, 0.35);
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+            border-color: rgba(255, 255, 255, 0.22);
+        }
+
+        .btn:active {
+            transform: translateY(0px);
+        }
+
+        .btn:focus-visible {
+            outline: 2px solid rgba(220, 20, 60, 0.55);
+            outline-offset: 3px;
+        }
+
+        /* Pound icon styling in 'Competitive Pricing' card */
+        .currency-icon {
+            font-size: 38px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+        }
+
+    </style>
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-rt-circle-dark.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-rt-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
 </head>
 <body>
     <!-- Header -->
     <header id="header">
         <nav>
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <svg class="icon" fill="white" viewBox="0 0 24 24">
-                        <path d="M14.5 7l-5 5 5 5v-10zm-1 2.42v5.16L11.42 12l2.08-2.08z"/>
-                        <path d="M7 2h10l4 4v12l-4 4H7l-4-4V6l4-4zm8.59 2H8.41L5 7.41v9.18L8.41 20h7.18L19 16.59V7.41L15.59 4z"/>
-                    </svg>
-                </div>
-                <span><strong>RT</strong> Electrical</span>
-            </a>
+            <a href="#home" class="logo">
+    <div class="logo-icon">
+        <img src="/logo.png" alt="RT Electrical logo" class="logo-img">
+    </div>
+    <span><strong>RT</strong> Electrical</span>
+</a>
             <div class="nav-links">
                 <a href="#home" class="active">Home</a>
                 <a href="#services">Services</a>
                 <a href="#gallery">Gallery</a>
                 <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#quote">Quick Quote</a>
                 <a href="#contact">Contact</a>
                 <a href="tel:07799531890" class="cta-button">Call Now</a>
             </div>
@@ -1000,6 +1059,8 @@
             <a href="#services">Services</a>
             <a href="#gallery">Gallery</a>
             <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#quote">Quick Quote</a>
             <a href="#contact">Contact</a>
             <a href="tel:07799531890" style="color: var(--primary); font-weight: 600;">
                 <svg class="icon" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;">
@@ -1235,6 +1296,118 @@
 
     
     <!-- Quick Quote Section -->
+<!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-header fade-in">
+            <h2>Our Recent Projects</h2>
+            <p>Quality electrical work across Renfrewshire</p>
+        </div>
+        <div class="gallery-carousel fade-in">
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="/images/1.jpg" alt="Complete house rewire project">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/2.jpg" alt="Consumer unit upgrade">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/3.jpg" alt="Kitchen electrical installation">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/4.jpg" alt="Bathroom electrical work">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/5.jpg" alt="Extension wiring">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/6.jpg" alt="Smart home installation">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/7.jpg" alt="Commercial electrical">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/8.jpg" alt="Outdoor electrical">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/9.jpg" alt="Victorian property rewire">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/10.jpg" alt="Dual consumer unit">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/11.jpg" alt="Loft conversion electrical">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/12.jpg" alt="EICR testing">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/13.jpg" alt="Emergency repair">
+</div>
+                    <div class="carousel-slide">
+                        <img src="/images/14.jpg" alt="LED lighting upgrade">
+</div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" onclick="moveCarousel(-1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn" onclick="moveCarousel(1)">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+            
+            <!-- Thumbnail Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-thumb" onclick="goToSlide(0)">
+                    <img src="/images/1.jpg" alt="Gallery thumbnail 1">
+                </div>
+                <div class="gallery-thumb" onclick="goToSlide(1)">
+                    <img src="/images/2.jpg" alt="Gallery thumbnail 2">
+                </div>
+                <div class="gallery-thumb" onclick="goToSlide(2)">
+                    <img src="/images/3.jpg" alt="Gallery thumbnail 3">
+                </div>
+                <div class="gallery-thumb" onclick="goToSlide(3)">
+                    <img src="/images/4.jpg" alt="Gallery thumbnail 4">
+                </div>
+                <div class="gallery-thumb" onclick="goToSlide(4)">
+                    <img src="/images/5.jpg" alt="Gallery thumbnail 5">
+                </div>
+                <div class="gallery-thumb" onclick="goToSlide(5)">
+                    <img src="/images/6.jpg" alt="Gallery thumbnail 6">
+                </div>
+                <div class="gallery-thumb" onclick="goToSlide(6)">
+                    <img src="/images/7.jpg" alt="Gallery thumbnail 7">
+                </div>
+                <div class="gallery-thumb" onclick="goToSlide(7)">
+                    <img src="/images/8.jpg" alt="Gallery thumbnail 8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="section-header fade-in">
+            <h2>Customer Reviews</h2>
+            <p>Recent feedback from Google</p>
+        </div>
+
+        <div class="reviews-embed fade-in">
+            <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-6b01a66c-4f0a-479d-a3f0-bfcd6e31fee8" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
     <section class="quick-quote" id="quote">
         <div class="section-header fade-in">
             <h2>Quick Quote</h2>
@@ -1257,117 +1430,6 @@
         </div>
     </section>
 
-<!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="section-header fade-in">
-            <h2>Our Recent Projects</h2>
-            <p>Quality electrical work across Renfrewshire</p>
-        </div>
-        <div class="gallery-carousel fade-in">
-            <div class="carousel-container">
-                <div class="carousel-track" id="carouselTrack">
-                    <div class="carousel-slide">
-                        <img src="/images/1.jpg" alt="Consumer unit upgrade">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/2.jpg" alt="Kitchen upgrade">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/3.jpg" alt="Kitchen electrical installation">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/4.jpg" alt="Outdoor socket">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/5.jpg" alt="Media wal">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/6.jpg" alt="Exterior lighting">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/7.jpg" alt="Exterior lighting">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/8.jpg" alt="EV charging station">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/9.jpg" alt="Living room downlights">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/10.jpg" alt="Exterior lighting">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/11.jpg" alt="EV charging station">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/12.jpg" alt="Interior lighting">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/13.jpg" alt="Exterior lighting">
-</div>
-                    <div class="carousel-slide">
-                        <img src="/images/14.jpg" alt="Outdoor lighting">
-</div>
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn" onclick="moveCarousel(-1)">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="15 18 9 12 15 6"/>
-                        </svg>
-                    </button>
-                    <button class="carousel-btn" onclick="moveCarousel(1)">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="carousel-indicators" id="carouselIndicators"></div>
-            
-            <!-- Thumbnail Grid -->
-            <div class="gallery-grid">
-                <div class="gallery-thumb" onclick="goToSlide(0)">
-                    <img src="/images/gallery/thumb-1.jpg" alt="Gallery thumbnail 1">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(1)">
-                    <img src="/images/gallery/thumb-2.jpg" alt="Gallery thumbnail 2">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(2)">
-                    <img src="/images/gallery/thumb-3.jpg" alt="Gallery thumbnail 3">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(3)">
-                    <img src="/images/gallery/thumb-4.jpg" alt="Gallery thumbnail 4">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(4)">
-                    <img src="/images/gallery/thumb-5.jpg" alt="Gallery thumbnail 5">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(5)">
-                    <img src="/images/gallery/thumb-6.jpg" alt="Gallery thumbnail 6">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(6)">
-                    <img src="/images/gallery/thumb-7.jpg" alt="Gallery thumbnail 7">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(7)">
-                    <img src="/images/gallery/thumb-8.jpg" alt="Gallery thumbnail 8">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-        <div class="section-header fade-in">
-            <h2>Customer Reviews</h2>
-            <p>Recent feedback from Google</p>
-        </div>
-
-        <div class="reviews-embed fade-in">
-            <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-            <script src="https://elfsightcdn.com/platform.js" async></script>
-            <div class="elfsight-app-6b01a66c-4f0a-479d-a3f0-bfcd6e31fee8" data-elfsight-app-lazy></div>
-        </div>
-    </section>
 
 <!-- Why Choose Section -->
     <section class="why-choose" id="about">
@@ -1378,18 +1440,7 @@
         <div class="why-grid">
             <div class="why-card fade-in">
                 <div class="why-icon">
-                    <svg class="icon icon-large" fill="white" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-                <h3>NAPIT Registered</h3>
-                <p>Fully accredited and insured electrical contractors</p>
-            </div>
-            <div class="why-card fade-in">
-                <div class="why-icon">
-                    <svg class="icon icon-large" fill="white" viewBox="0 0 24 24">
-                        <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
-                    </svg>
+                    <span class="currency-icon">£</span>
                 </div>
                 <h3>Competitive Pricing</h3>
                 <p>Fair, transparent quotes with no hidden costs</p>
