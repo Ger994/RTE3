@@ -1016,6 +1016,23 @@
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon-rt-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png.png">
 
+
+<style>
+/* Section separation & rhythm */
+.section-dark {
+  background: #000;
+  padding: 100px 20px;
+}
+.section-dark-alt {
+  background: #0f0f0f;
+  padding: 100px 20px;
+}
+section { position: relative; }
+
+/* Scroll offset for fixed header */
+#quick-quote { scroll-margin-top: 100px; }
+</style>
+
 </head>
 <body>
     <!-- Header -->
@@ -1395,7 +1412,7 @@
 
     
     <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
+    <section class="reviews" id="reviews" class="section-dark-alt">
         <div class="section-header fade-in">
             <h2>Customer Reviews</h2>
             <p>Recent feedback from Google</p>
@@ -1410,7 +1427,7 @@
 
     <section class="quick-quote" id="quote">
         <div class="section-header fade-in">
-            <h2>Quick Quote</h2>
+            <section id="quick-quote" class="section-dark"><div class="container"><h2>Quick Quote</h2>
             <p>Send the basics — we’ll get back to you fast.</p>
         </div>
 
@@ -1428,7 +1445,7 @@
                 <p class="form-note">We’ll only use your details to respond to this enquiry.</p>
             </form>
         </div>
-    </section>
+    </div></section></section>
 
 
 <!-- Why Choose Section -->
