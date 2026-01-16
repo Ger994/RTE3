@@ -958,11 +958,17 @@
 
         /* Brand logo in navbar */
         .logo-icon .logo-img {
-            width: 28px;
-            height: 28px;
-            object-fit: contain;
+            height: 64px;
+            width: auto;
             display: block;
         }
+
+        @media (min-width: 768px) {
+            .logo-icon .logo-img {
+                height: 78px;
+            }
+        }
+
 
         /* Modern button styling */
         .btn {
@@ -1012,9 +1018,12 @@
 
     </style>
 
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon-rt-circle-dark.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon-rt-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png.png">
+<link rel="icon" href="./favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="./favicon-rt.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="manifest" href="./site.webmanifest">
 
 
 
@@ -1093,7 +1102,7 @@ section{ position: relative; }
         <nav>
             <a href="#home" class="logo">
     <div class="logo-icon logo-plain">
-        <img src="./logo.png" alt="RT Electrical logo" class="logo-img">
+        <img src="./rt-mark.svg" alt="RT Electrical logo" class="logo-img">
     </div>
     <span><strong>RT</strong> Electrical</span>
 </a>
@@ -1433,33 +1442,6 @@ section{ position: relative; }
             </div>
             <div class="carousel-indicators" id="carouselIndicators"></div>
             
-            <!-- Thumbnail Grid -->
-            <div class="gallery-grid">
-                <div class="gallery-thumb" onclick="goToSlide(0)">
-                    <img src="./images/1.JPG" alt="Gallery thumbnail 1">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(1)">
-                    <img src="./images/2.JPG" alt="Gallery thumbnail 2">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(2)">
-                    <img src="./images/3.JPG" alt="Gallery thumbnail 3">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(3)">
-                    <img src="./images/4.JPG" alt="Gallery thumbnail 4">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(4)">
-                    <img src="./images/5.JPG" alt="Gallery thumbnail 5">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(5)">
-                    <img src="./images/6.JPG" alt="Gallery thumbnail 6">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(6)">
-                    <img src="./images/7.JPG" alt="Gallery thumbnail 7">
-                </div>
-                <div class="gallery-thumb" onclick="goToSlide(7)">
-                    <img src="./images/8.JPG" alt="Gallery thumbnail 8">
-                </div>
-            </div>
         </div>
     </section>
 
